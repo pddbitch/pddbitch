@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>Bootstrap Vertical Tabs</title>
+            <link rel="stylesheet" href="css-bootstrap.min.css">
+                <link rel="stylesheet" href="bootstrap.vertical-tabs.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="page-header">
+                <h3>准入客户端帮助文档</h3>
+            </div>
+            
+            <div class="row" style="min-height:600px;">
+                <div  class="col-sm-6">
+                    <div class="col-xs-3"> <!-- required for floating -->
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs tabs-left">
+                            <li class="active"><a href="#login" data-toggle="tab">注册/登录</a></li>
+                            <li><a href="#office" data-toggle="tab">连接办公网络</a></li>
+                            <li><a href="#vpn" data-toggle="tab">连接VPN</a></li>
+                            <li><a href="#version" data-toggle="tab">准入版本相关</a></li>
+                            <li><a href="#logger" data-toggle="tab">本地日志</a></li>
+                            <li><a href="#repair" data-toggle="tab">网络修复</a></li>
+                            <li><a href="#utils" data-toggle="tab">科学上网等</a></li>
+                            <li><a href="#clear_data" data-toggle="tab">强制注销设备</a></li>
+                            <li><a href="#public_device" data-toggle="tab">公用设备登入</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-xs-9">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="login">
+                                <h4>
+                                    扫码注册/登录
+                                </h4>
+                                <p>扫码注册/登录，使用手机上的Knock扫一扫并授权注册登录</p>
+                                <img src="./qrcode.png" width="100%" height="45%">
+                                <h4>
+                                    PIN+OTP注册/登录
+                                </h4>
+                                <p>在下图对应区域分别输入花名拼音、6位短密码、6位动态密码。注意：花名不要带回车符等</p>
+                                <img src="./register.png" width="100%" height="45%">
+                                <p>点击下图红色区域注销设备</p>
+                                <img src="./unregister.png" width="100%" height="45%">
+                                    </div>
+                            <div class="tab-pane" id="office">
+                                <h4>连入办公网络</h4>
+                                <p>点击下图按钮连入办公网络</p>
+                                <img src="./before_connect_pdd.png" width="100%" height="45%"/>
+                                <p>下图为成功连入办公网络示例</p>
+                                <img src="./after_connect_pdd.png" width="100%" height="45%"/>
+                            </div>
+                            <div class="tab-pane" id="vpn">
+                                <h4>连入VPN</h4>
+                                <p>点击下图按钮连入VPN</p>
+                                <img src="./before_connect_vpn.png" width="100%" height="45%"/>
+                                </p>下图为成功连入VPN示例</>
+                                <img src="./after_connect_vpn.png" width="100%" height="45%"/>
+                                <h3>切换VPN区域-入口1</h3>
+                                <p>图中红色区域连续快速点击5次，出现选取界面，默认为自动选区，根据个人需要选区</p>
+                                <img src="./change-vpnzone.png" width="100%" height="45%"/>
+                                <h3>切换VPN区域-入口2</h3>
+                                <p>主界面菜单栏点击VPN选区</p>
+                                <img src="./change-vpnzone-1.png" width="100%" height="45%"/>
+                                <p>下图为准入提供的VPN区域，包括：自动选区、2区等等</p>
+                                <img src="./vpn_zone.png" width="100%" height="45%"/>
+
+                            </div>
+                            <div class="tab-pane" id="version">
+                                <h4>查看准入版本</h4>
+                                <p>点击图中红色区域按钮，出现版本号说明</p>
+                                <img src="./about-stargate.png" width="100%" height="45%"/>
+                                <p>如下图为准入版本</p>
+                                <img src="./stargate-version.png" width="100%" height="45%"/>
+                                <h4>检查是否为最新版准入</h4>
+                                <p>点击图中红色区域按钮，如果返回更新错误，一般情况下为此时是内测时段暂时关闭更新通道</p>
+                                <img src="./check_for_update.png" width="100%" height="45%"/>
+                            </div>
+                            <div class="tab-pane" id="logger">
+                                <h4>查看本地准入实时日志</h4>
+                                <p>入口 1：准入菜单栏，stargate->查看本地日志</p>
+                                <img src="./view_local_stargate_log-1.png" width="100%" height="45%"/>
+                                <p>入口 2：从准入主界面进入，入口如下图所示</p>
+                                <img src="./view_local_stargate_log-2.png" width="100%" height="45%"/>
+                            </div>
+                            <div class="tab-pane" id="repair">
+                                <h4>网络修复入口</h4>
+                                <p>入口 1：准入菜单栏，help->网络修复</p>
+                                <img src="./repair-entry-1.png" width="100%" height="45%"/>
+                                <p>入口 2：从准入主界面进入，入口如下图所示</p>
+                                <img src="./repair-entry-2.png" width="100%" height="45%"/>
+                                <h4>网络修复主界面</h4>
+                                <p>网络修复可以帮助用户快速定位和解决问题</p>
+                                <img src="./repair-view.png" width="100%" height="60%"/>
+                                <img src="./repair-certain.png" width="100%" height="45%"/>
+                                <img src="./repair-result.png" width="100%" height="45%"/>
+                            </div>
+                            <div class="tab-pane" id="utils">
+                                <h4>科学上网入口</h4>
+                                <p>入口 1：准入菜单栏，help->网络工具</p>
+                                <img src="./utils-entry-1.png" width="100%" height="45%"/>
+                                <p>入口 2：从准入主界面进入，入口如下图所示</p>
+                                <img src="./utils-entry-2.png" width="100%" height="45%"/>
+                                <h4>设置科学上网</h4>
+                                <p>点击下图按钮，设置科学上网</p>
+                                <img src="./ss.png" width="100%" height="45%"/>
+                                <p>点击下图按钮，取消科学上网</p>
+                                <img src="./ssed.png" width="100%" height="45%"/>
+                                <h4>清空系统DNS数据</h4>
+                                <p>当网络有问题时，可尝试点击下图按钮，清空系统DNS数据</p>
+                                <img src="./dns.png" width="100%" height="45%"/>
+                            </div>
+                            <div class="tab-pane" id="clear_data">
+                                <h4>强制注销设备（将导致准入重启）入口</h4>
+                                <p>入口 1：准入菜单栏，help->注销准入</p>
+                                <img src="./force-unregister-1.png" width="100%" height="45%"/>
+                                <p>入口 2：准入菜单栏，help->相关工具</p>
+                                <img src="./utils-entry-1.png" width="100%" height="45%"/>
+                                <p>入口 2：从准入主界面进入，入口如下图所示</p>
+                                <img src="./utils-entry-2.png" width="100%" height="45%"/>
+                                <h4>强制注销设备</h4>
+                                <p>当出现无法登录、非法请求等情况时，可尝试强制注销设备，并重新注册</p>
+                                <img src="./clear.png" width="100%" height="45%"/>
+                            </div>
+                            <div class="tab-pane" id="public_device">
+                                <h4>公用设备登入</h4>
+                                <p>在注册界面进入，如下图</p>
+                                <img src="./public_device_in.png" width="100%" height="45%"/>
+                                <h4>登入失败界面</h4>
+                                <p>请根据下图中提示操作</p>
+                                <img src="./public_device_failed.png" width="100%" height="45%"/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="clearfix"></div>
+                    
+                </div>
+            </div>
+            
+            <div class="clearfix"></div>
+        </div>
+        
+        <footer class="footer" style="width:100%; text-align:center; padding-bottom:20px;">
+            <hr/>
+            拼多多安全组，使用如有问题，请在办公答疑群请求帮助
+        </footer>
+        
+        <script src="jquery-2.1.1.min.js"></script>
+        <script src="src/bootstrap.min.js"></script>
+    </body>
+</html>
